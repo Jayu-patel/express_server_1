@@ -5,7 +5,9 @@ const product = require('./product')
 
 app.use(cors(
     {
-        origin: 'http://localhost:5173'
+        allowedHeaders: "*",
+        allowMethods: "*",
+        origin: "*"
     }
 ))
 app.use(express.json())
