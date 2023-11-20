@@ -48,4 +48,5 @@ app.get('/search/:key',async(req,res)=>{
     res.send(data)
 })
 
-app.listen(4500)
+const port = process.env.PORT || 4500
+app.listen(port)
