@@ -7,7 +7,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/',(_,res)=>{
-    res.send("Server is ready to serve")
+    res.send("Server is ready to serve 👍")
 })
 
 app.post('/add',async(req,res)=>{
