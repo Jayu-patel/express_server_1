@@ -6,6 +6,10 @@ const product = require('./product')
 app.use(cors())
 app.use(express.json())
 
+app.get('/',(_,res)=>{
+    res.send("Server is ready to serve")
+})
+
 app.post('/add',async(req,res)=>{
     const item = new product(req.body)
     const result = await item.save()
