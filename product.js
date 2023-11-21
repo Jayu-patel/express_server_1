@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const link1 = 'mongodb+srv://JayuPatel:mernpassmongo@cluster1.hvuu6u9.mongodb.net/mernstack'
+const link = process.env.LINK
 
-mongoose.connect(link1)
+mongoose.connect(link)
 
 const scema = new mongoose.Schema({
     name: String,
